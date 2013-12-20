@@ -1,0 +1,5 @@
+#!/bin/bash
+/usr/sbin/service puppet stop
+/bin/rm -f /var/lib/puppet/state/puppetdlock
+/usr/sbin/puppetd -vt
+/usr/sbin/service puppet start
